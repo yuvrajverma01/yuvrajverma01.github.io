@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: url('back.jpg');
+	background-repeat: no-repeat;
+	object-fit: cover;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+
+/* ####################################################   Title Heading  #################################################### */
+
+
+ .maintitle {
+	 width: 900px;
+	 height: 30vh;
+	 padding-left: 80px;
+     z-index: 900;
+     display: flex;
+     left: 200px;
+	 justify-content: center;
+	 align-items: center;
+}
+ .maintitle .box {
+	 width: 900px;
+	 height: 400px;
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+}
+ .maintitle .box .title {
+	 width: 100%;
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 height: 50px;
+}
+ .maintitle .box .title .block {
+	 width: 0%;
+	 height: inherit;
+	 background: #ffb510;
+	 position: absolute;
+	 animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	 display: flex;
+}
+ .maintitle .box .title h1 {
+	 font-family: "Poppins";
+	 color: white;
+	 font-size: 110px;
+	 -webkit-animation: mainFadeIn 2s forwards;
+	 -o-animation: mainFadeIn 2s forwards;
+	 animation: mainFadeIn 2s forwards;
+	 animation-delay: 1.6s;
+	 opacity: 0;
+	 display: flex;
+	 align-items: baseline;
+	 position: relative;
+}
+ .maintitle .box .title h1 span {
+	 width: 0px;
+	 height: 0px;
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 border-radius: 50%;
+	 background: #ffb510;
+	 -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	 animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	 animation-delay: 2s;
+	 margin-left: 5px;
+	 margin-top: -10px;
+	 position: absolute;
+	 bottom: 13px;
+	 right: -12px;
+}
+ .maintitle .box .role {
+	 width: 100%;
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 height: 30px;
+	 margin-top: 25px;
+}
+ .maintitle .box .role .block {
+	 width: 0%;
+	 height: inherit;
+	 background: #e91e63;
+	 position: absolute;
+	 animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	 animation-delay: 2s;
+	 display: flex;
+}
+ .maintitle .box .role p {
+	 animation: secFadeIn 2s forwards;
+	 animation-delay: 3.2s;
+	 opacity: 0;
+	 font-weight: 900;
+	 font-family: "Lato";
+	 color: white;
+	 font-size: 20px;
+    padding-left: 10px;
+	 text-transform: uppercase;
+	 letter-spacing: 5px;
+}
+ @keyframes mainBlock {
+	 0% {
+		 width: 0%;
+		 left: 0;
+	}
+	 50% {
+		 width: 100%;
+		 left: 0;
+	}
+	 100% {
+		 width: 0;
+		 left: 100%;
+	}
+}
+ @keyframes secBlock {
+	 0% {
+		 width: 0%;
+		 left: 0;
+	}
+	 50% {
+		 width: 94%;
+		 left: 0;
+	}
+	 100% {
+		 width: 0;
+		 left: 100%;
+	}
+}
+ @keyframes mainFadeIn {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
+ @keyframes popIn {
+	 0% {
+		 width: 0px;
+		 height: 0px;
+		 background: #e9d856;
+		 border: 0px solid #ddd;
+		 opacity: 0;
+	}
+	 50% {
+		 width: 10px;
+		 height: 10px;
+		 background: #e9d856;
+		 opacity: 1;
+		 bottom: 45px;
+	}
+	 65% {
+		 width: 7px;
+		 height: 7px;
+		 bottom: 0px;
+		 width: 15px;
+	}
+	 80% {
+		 width: 10px;
+		 height: 10px;
+		 bottom: 20px;
+	}
+	 100% {
+		 width: 7px;
+		 height: 7px;
+		 background: #e9d856;
+		 border: 0px solid #222;
+		 bottom: 13px;
+	}
+}
+ @keyframes secFadeIn {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 0.5;
+	}
+}
+
+/* ####################################################  Online Payment Form  #################################################### */
+
+.orderform {
+	position: absolute;
+	font-family: HP Simplified;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  
+ .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 900px;
+	border-radius: 10px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: white;
+	margin-left: 80px;
+	font-family: HP Simplified;
+	animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+  
+  
+  input[type="submit"] {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	border-radius: 0px 0px 10px 10px;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	font-family: HP Simplified;
+  }
+  
+  input[type="submit"]:hover {
+	opacity: 0.7;
+  }
+
+  .formfieldtable {
+	  padding-left: 30px;
+  }
+  
+.formfieldtable tr td {
+	text-align: left;
+}
+
+.formfieldtable .col2{
+	padding-left: 100px;
+}
+  .formfieldtable input {
+	  width: 320px;
+	  height: 25px;
+	  border-radius: 5px 5px 5px 5px;
+  }
+
+#state {
+	width: 320px;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: 2px solid black;
+}
+
+
+/* ####################################################  End Of The CSS Styling Sheet  #################################################### */

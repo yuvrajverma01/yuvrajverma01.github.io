@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Checkout.1.css">
+    <title>Document</title>
+    <script src="javascriptsheet.js"></script>
+</head>
+<body>
+
+<!--####################################################   Title Heading  ####################################################-->
+
+    <section class="maintitle" align="center">
+        <div class="box">
+            <div class="title">
+                <span class="block"></span>
+                <h1>Order Now<span></span></h1>
+            </div>
+            <div class="role">
+                <div class="block"></div>
+                <p>Secured Payment Gateway</p>
+            </div>
+        </div>
+    </section>
+
+
+<!--####################################################   Order Form  ####################################################-->
+
+
+    <section class="orderform">
+        <div class="card">
+            <h1 style="font-size: 40px; padding-top: 25px; margin-bottom: -6px;">ORDER ONLINE FORM</h1>
+            <img src="coffee.jpg" alt="John" style="width: 800px; padding-left:20px;padding-right: 20px;padding-bottom: 20px; height: 200px; border-radius: 0px 0px 10px 10px; padding-top: 20px; object-fit: cover;">
+            <h3>Product Type..............................................Unbrewed Coffee</h3>
+            <h3>Total Amount.................................................................$15</h3><br><br>
+            <form action="index.html" class="formfield" name="formfield" onsubmit="return validateForm()">
+                <table class="formfieldtable" style="border-collapse: separate;">
+                    <tr class="row1">
+                        <td><label for="fname">First Name</label></td>
+                        <td class="col2"><label for="lname">Last Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="fname" id="fname" required placeholder="First Name"></td>
+                        <td class="col2"><input type="text" name="lname" id="lname" required placeholder="Last Name">
+                    </tr>
+                    <tr style="padding-top: 10px;">
+                        <td colspan="2"><label for="add">Address</label></td>
+                    </tr>
+                    <tr class="row1">
+                        <td colspan="2"><input type="text" name="ad" id="ad" style="width: 640px;" required placeholder="Enter Your Current Address">&ensp;&ensp;&ensp;&ensp;&ensp;<img src="form1.png" style="vertical-align: middle;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td class="col2"><label for="State">State</label></td>
+                    </tr>
+                    <tr class="row1">
+                        <td><input type="text" name="country" id="country" readonly placeholder="India"></td>
+                        <td class="col2">
+                            <select name="state" id="state">
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai" >Mumbai</option>
+                                <option value="Kerala">Kerala</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="row1">
+                        <td colspan="2"><label for="fname">Payment Method</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <input type="radio" value="card" checked>Card (Visa/Mastercard/Rupay) <br>
+                            <input type="radio" value="wallet" disabled>Wallets (PayTM/GPay/Phonpe) <br>
+                            <input type="radio" value="cod" disabled>Cash On Delivery <br>
+                        </td>
+                    </tr>
+                    <tr class="row1">
+                        <td><label for="cardno">Card Number</label></td>
+                        <td><label for="exp" style="margin-left: 150px;">Expiry Date</label></td>
+                        <td><label for="cvv">CVV</label></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 300px;"><input type="text" name="cardno" id="cardno" required placeholder="XXXX XXXX XXXX XXXX" style="width: 300px;"></td>
+                        <td style="width: 200px;"><input type="text" name="exp" id="exp" required placeholder="XX/XX" style="width: 200px; margin-left: 150px;"></td>
+                        <td style="width: 100px;"><input type="text" name="cvv" id="cvv" required placeholder="XXX" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <br>
+            <br>
+            <p><input type="submit" value="Order Now" onclick="successfull();"></p>
+            </form>
+          </div>
+    </section>
+
+
+<!--####################################################   End of the HTML Structure  ####################################################-->
+
+
+</body>
+</html>
