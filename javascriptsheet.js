@@ -45,7 +45,7 @@ function successfull() {
   
   if (fn.length >3 && fn.length<20) {
       if (ln.length >3 && ln.length<20) {
-          if (cno.length==12 && cv.length==3) {
+          if (cno.length==16 && cv.length==3) {
               alert("Order Recieved Successfully");
           } else {
               alert("Please Fill The Order Properly");
